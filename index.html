@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- connect bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Unit Convertor</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <!-- title -->
+      <div class="jumbotron">
+        <h1 class="display-4">Unit Convertor</h1>
+      </div>
+      <div>
+        <!-- user types in a number to be converted -->
+        <input type="number" name="" id="user-input">
+
+        <!-- choosing units from -->
+        <select name="units-from" id="units-from">
+          <option value="byte">Byte</option>
+          <option value="kilobyte">Kilobyte</option>
+          <option value="megabyte">Megabyte</option>
+          <option value="gigabyte">Gigabyte</option>
+        </select>
+
+        <!-- text to say to -->
+        <p>to</p>
+
+        <!-- choosing units to be converted to -->
+        <select name="units-to" id="units-to">
+          <option value="byte">Byte</option>
+          <option value="kilobyte">Kilobyte</option>
+          <option value="megabyte">Megabyte</option>
+          <option value="gigabyte">Gigabyte</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- button to start the magic -->
+      <button onclick="convert()" class="btn btn-dark">Convert</button>
+      <div>
+        <br />
+        <!-- where the results will display -->
+        <p id="display"></p>
+      </div>
+    </div>
+    <!-- connecting jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- connecting our javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
